@@ -1,0 +1,21 @@
+{
+  "name": "ts-node-solid-examples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "single": "node -r ts-node/register src/single-responsibility-principle.ts",
+    "open-closed": "node -r ts-node/register src/open-closed-principle.ts",
+    "liskov": "node -r ts-node/register src/liskov-substitution-principle.ts",
+    "isp": "node -r ts-node/register src/interface-segregation-principle.ts",
+    "dip": "node -r ts-node/register --env-file=.env src/dependency-inversion-principle.ts"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.15",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.14"
+  }
+}
